@@ -1,0 +1,48 @@
+.board {
+  width: 400px;
+  height: 400px;
+  background-color: white;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  align-items: center;
+  justify-items: center;
+  border: 4px solid white;
+}
+
+.cell {
+  background-color: var(--sea-color);
+  width: 38px;
+  height:38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.board[name="computer-board"] .cell-active:hover {
+  background-color: var(--miss-color);
+  cursor: pointer;
+}
+
+.cell-missed, .cell-hit {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px; 
+}
+
+.cell-missed {
+  background-color: var(--miss-color); 
+}
+
+.cell-hit {
+  background-color: var(--hit-color); 
+}
+
+.board[name="player-board"] .cell-ship {
+  background-color: #2d389d;
+}
+.cell-sunk {
+  background-color: #2d389d;
+  border: 5px solid var(--hit-color);
+  
+}

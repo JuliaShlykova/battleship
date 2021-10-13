@@ -1,0 +1,41 @@
+:root {
+  font-size: 32px;
+  font-family: 'Bahianita', sans-serif;
+  letter-spacing: 2px;
+  color: white;
+  --sea-color: #1f2450;
+  --hit-color: #b72340;
+  --miss-color: #a5a7b9;
+}
+
+.App {
+  background-color: var(--sea-color);
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+.hitCircle {
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+  background-color: var(--hit-color);
+}
+
+.missCircle {
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+  background-color: var(--miss-color);
+}
+
+.boards-zone {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  min-width: 850px;
+}
+
+h1 {
+  text-align: center;
+}
