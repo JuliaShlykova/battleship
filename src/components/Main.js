@@ -1,7 +1,6 @@
 import Board from "./Board";
 import Gameboard from "../units/gameboard";
-import { useState } from "react";
-import { useEffect } from "react/cjs/react.development";
+import { useState, useEffect } from "react";
 
 const randomShipPosition = (length, occupiedCells=[]) => {
   let possibleInitialPosition = [];
